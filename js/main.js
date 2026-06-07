@@ -7,6 +7,16 @@
    - Lightbox pro fotogalerii
    ===================================================== */
 
+// ─── KONFIGURACE ─────────────────────────────────────────────────────────────
+
+const CONFIG = {
+  comingSoon: true,  // true = zobrazit pouze hero + „Stránky se připravují..."
+};
+
+if (CONFIG.comingSoon) {
+  document.body.classList.add('coming-soon');
+}
+
 // ─── MOBILNÍ MENU ────────────────────────────────────────────────────────────
 
 const siteHeader = document.getElementById('site-header');

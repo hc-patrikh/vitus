@@ -924,3 +924,28 @@ address { font-style: normal; }
   .lightbox-prev { left: 0.5rem; }
   .lightbox-next { right: 0.5rem; }
 }
+
+/* ===== COMING SOON MODE ===== */
+.hero-coming-soon {
+  display: none;
+}
+
+body.coming-soon header,
+body.coming-soon section:not(#uvod),
+body.coming-soon footer {
+  display: none;
+}
+
+body.coming-soon .btn-primary {
+  display: none;
+}
+
+body.coming-soon .hero-coming-soon {
+  display: block;
+  margin-top: 1.5rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
