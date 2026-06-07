@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- DOPLNIT: Aktualizovat popis souboru a město -->
+  <meta name="description" content="Ochotnické divadlo Vitus — soubor z [Město]. Naše hry, soubor, fotogalerie a kontakt.">
+  <meta property="og:title" content="Divadlo Vitus">
+  <meta property="og:description" content="Ochotnický divadelní soubor z [Město]">
+  <!-- DOPLNIT: <meta property="og:image" content="images/hero/hlavni-foto.webp"> -->
+  <title>Divadlo Vitus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Přejít na obsah</a>
+
+  <!-- ===================== NAVIGACE ===================== -->
+  <header id="site-header">
+    <nav class="nav-container" aria-label="Hlavní navigace">
+      <a href="#uvod" class="nav-logo">Vitus</a>
+      <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#uvod">Úvod</a></li>
+        <li><a href="#repertuar">Naše hry</a></li>
+        <li><a href="#soubor">Soubor</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== ÚVOD ===================== -->
+    <section id="uvod" class="section-hero">
+      <div class="hero-bg">
+        <!-- DOPLNIT: Nahradit gradient skutečnou fotografií:
+          <img src="images/hero/hlavni-foto.webp" alt="" role="presentation" loading="eager">
+        -->
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-logo-box">
+          <img src="images/logo.jpg" alt="Logo divadla Vitus">
+        </div>
+        <p class="hero-eyebrow">Divadelní soubor</p>
+        <!-- DOPLNIT: Název souboru a město -->
+        <h1 class="hero-title">Vitus</h1>
+        <p class="hero-subtitle">Z&nbsp;lásky k&nbsp;divadlu — Syrovice</p>
+        <a href="#repertuar" class="btn-primary">Naše hry</a>
+      </div>
+    </section>
+
+    <!-- O NÁS (stručně, pod hero) -->
+    <section class="section-about" aria-label="O nás">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="section-title">O&nbsp;nás</h2>
+          <!-- DOPLNIT: Krátký text o souboru (2–4 věty). Co vás spojuje, kdy jste vznikli, co děláte. -->
+          <p>Jsme ochotnický divadelní soubor s&nbsp;vášní pro příběhy a herecký výraz. Spojuje nás touha bavit publikum, odvaha zkoušet nové věci a radost ze&nbsp;společné práce na&nbsp;scéně i&nbsp;za&nbsp;ní. Divadlo Vitus vzniklo v&nbsp;[rok] a od té doby uvádíme hry napříč žánry — od komedie přes drama až po experimentální formy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REPERTOÁR ===================== -->
+    <section id="repertuar" class="section-repertuar">
+      <div class="container">
+        <h2 class="section-title">Naše hry</h2>
+
+        <div class="plays-grid">
+
+          <article class="play-card">
+            <div class="play-poster">
+              <img src="images/plays/mirove_jednani.jpg" alt="Plakát — Mírové jednání aneb co nám Jirásek zatajil" loading="lazy">
+            </div>
+            <div class="play-info">
+              <p class="play-author"><!-- DOPLNIT: Autor --></p>
+              <h3 class="play-title">Mírové jednání <span class="play-title-aneb">aneb co nám Jirásek zatajil</span></h3>
+              <p class="play-synopsis"><!-- DOPLNIT: Anotace — krátký děj (3–5 vět). Co diváky čeká, atmosféra, žánr. --></p>
+              <details class="play-details">
+                <summary>Realizační tým</summary>
+                <dl class="play-team">
+                  <dt>Režie</dt>
+                  <dd><!-- DOPLNIT: Jméno režiséra --></dd>
+                  <dt>Obsazení</dt>
+                  <dd><!-- DOPLNIT: Jméno 1, Jméno 2, Jméno 3 --></dd>
+                  <dt>Scéna</dt>
+                  <dd><!-- DOPLNIT: Jméno scénografa --></dd>
+                  <dt>Kostýmy</dt>
+                  <dd><!-- DOPLNIT: Jméno --></dd>
+                </dl>
+              </details>
+              <details class="play-details">
+                <summary>Pro pořadatele</summary>
+                <dl class="play-tech">
+                  <dt>Délka</dt>
+                  <dd><!-- DOPLNIT: např. cca 90 minut + přestávka --></dd>
+                  <dt>Prostor</dt>
+                  <dd><!-- DOPLNIT: Minimální jevištní hloubka a šířka --></dd>
+                  <dt>Světla a zvuk</dt>
+                  <dd><!-- DOPLNIT: Základní osvětlení, zvuková aparatura --></dd>
+                  <dt>Počet osob</dt>
+                  <dd><!-- DOPLNIT: X herců + Y technici --></dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+
+          <article class="play-card">
+            <div class="play-poster">
+              <img src="images/plays/soudni_proces.jpg" alt="Plakát — Soudní proces aneb nic není černobílé" loading="lazy">
+            </div>
+            <div class="play-info">
+              <p class="play-author"><!-- DOPLNIT: Autor --></p>
+              <h3 class="play-title">Soudní proces <span class="play-title-aneb">aneb nic není černobílé</span></h3>
+              <p class="play-synopsis"><!-- DOPLNIT: Anotace --></p>
+              <details class="play-details">
+                <summary>Realizační tým</summary>
+                <dl class="play-team">
+                  <dt>Režie</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Obsazení</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Scéna</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Kostýmy</dt><dd><!-- DOPLNIT --></dd>
+                </dl>
+              </details>
+              <details class="play-details">
+                <summary>Pro pořadatele</summary>
+                <dl class="play-tech">
+                  <dt>Délka</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Prostor</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Světla a zvuk</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Počet osob</dt><dd><!-- DOPLNIT --></dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+
+          <article class="play-card">
+            <div class="play-poster">
+              <img src="images/plays/zlocin_z_lasky.jpg" alt="Plakát — Zločin z lásky aneb tady strážím já" loading="lazy">
+            </div>
+            <div class="play-info">
+              <p class="play-author"><!-- DOPLNIT: Autor --></p>
+              <h3 class="play-title">Zločin z lásky <span class="play-title-aneb">aneb tady strážím, já</span></h3>
+              <p class="play-synopsis"><!-- DOPLNIT: Anotace --></p>
+              <details class="play-details">
+                <summary>Realizační tým</summary>
+                <dl class="play-team">
+                  <dt>Režie</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Obsazení</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Scéna</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Kostýmy</dt><dd><!-- DOPLNIT --></dd>
+                </dl>
+              </details>
+              <details class="play-details">
+                <summary>Pro pořadatele</summary>
+                <dl class="play-tech">
+                  <dt>Délka</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Prostor</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Světla a zvuk</dt><dd><!-- DOPLNIT --></dd>
+                  <dt>Počet osob</dt><dd><!-- DOPLNIT --></dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+
+          <!-- DOPLNIT: Další hry přidat zkopírováním bloku article.play-card výše -->
+
+        </div><!-- /.plays-grid -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ===================== SOUBOR ===================== -->
+    <section id="soubor" class="section-soubor">
+      <div class="container">
+        <h2 class="section-title">Kdo jsme</h2>
+
+        <div class="team-photo-wrapper">
+          <img src="images/team/sbor.jpg" alt="Soubor divadla Vitus" class="team-photo">
+        </div>
+
+        <div class="team-groups">
+
+          <!-- DOPLNIT: Jména a případně fotky herců -->
+          <div class="team-group">
+            <h3 class="team-group-title">Herci</h3>
+            <ul class="team-list" role="list">
+              <!-- Vzor s fotkou:
+                <li class="team-member">
+                  <img src="images/team/jmeno.webp" alt="Křestní Příjmení">
+                  <span>Křestní Příjmení</span>
+                </li>
+              -->
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+            </ul>
+          </div>
+
+          <div class="team-group">
+            <h3 class="team-group-title">Režie</h3>
+            <ul class="team-list" role="list">
+              <li class="team-member"><span>Markéta Hanzelová</span></li>
+            </ul>
+          </div>
+
+          <!-- DOPLNIT: Technika, kostýmy, produkce, osvětlení... -->
+          <div class="team-group">
+            <h3 class="team-group-title">Zázemí</h3>
+            <ul class="team-list" role="list">
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+              <li class="team-member"><span>Jméno Příjmení</span></li>
+            </ul>
+          </div>
+
+        </div><!-- /.team-groups -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ===================== GALERIE ===================== -->
+    <section id="galerie" class="section-galerie">
+      <div class="container">
+        <h2 class="section-title">Fotogalerie</h2>
+        <p class="section-subtitle">Momenty ze scény i ze zákulisí</p>
+
+        <!--
+          JAK PŘIDAT SKUTEČNÉ FOTOGRAFIE:
+          1. Fotky zkomprimujte skriptem optimize-images.sh (vytvoří .webp verze)
+          2. Přidejte je do složky images/gallery/
+          3. Nahraďte div.gallery-placeholder tagem <img> takto:
+
+          <img
+            src="images/gallery/foto1.webp"
+            alt="Stručný popis momentky"
+            loading="lazy"
+            class="gallery-img"
+          >
+
+          Třídy gallery-img--tall a gallery-img--wide roztáhnou buňku na výšku/šířku:
+          <img class="gallery-img gallery-img--tall" ...>
+          <img class="gallery-img gallery-img--wide" ...>
+        -->
+        <div class="gallery-grid" role="list" aria-label="Fotogalerie">
+          <img src="images/gallery/foto-01.jpg" alt="Fotografie ze zákulisí" loading="lazy" class="gallery-img">
+          <img src="images/gallery/foto-02.jpg" alt="Fotografie ze zákulisí" loading="lazy" class="gallery-img gallery-img--wide">
+          <img src="images/gallery/foto-03.jpg" alt="Fotografie ze scény" loading="lazy" class="gallery-img">
+          <img src="images/gallery/foto-04.jpg" alt="Fotografie ze scény" loading="lazy" class="gallery-img">
+          <img src="images/gallery/foto-05.jpg" alt="Fotografie ze zákulisí" loading="lazy" class="gallery-img gallery-img--wide">
+          <img src="images/gallery/foto-06.jpg" alt="Fotografie ze scény" loading="lazy" class="gallery-img">
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ===================== KONTAKT ===================== -->
+    <section id="kontakt" class="section-kontakt">
+      <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+
+        <div class="contact-grid">
+
+          <div class="contact-block">
+            <h3>Vedení souboru</h3>
+            <address>
+              <!-- DOPLNIT: Jméno a telefon vedoucího souboru -->
+              <p><strong>Jméno Příjmení</strong> — vedoucí souboru</p>
+              <p><a href="mailto:divadlovitus@seznam.cz">divadlovitus@seznam.cz</a></p>
+              <p><a href="tel:+420000000000">+420 000 000 000</a></p>
+            </address>
+          </div>
+
+          <!-- DOPLNIT: Kontakt na produkci / pořadatele -->
+          <div class="contact-block">
+            <h3>Produkce</h3>
+            <address>
+              <p><strong>Markéta Hanzelová</strong> — režie</p>
+              <p><a href="mailto:divadlovitus@seznam.cz">divadlovitus@seznam.cz</a></p>
+              <!-- DOPLNIT: Telefonní číslo -->
+            </address>
+          </div>
+
+          <!-- DOPLNIT: URL profilů na FB a IG -->
+          <div class="contact-block">
+            <h3>Sledujte nás</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100027457256404" class="social-link" aria-label="Facebook divadla Vitus" target="_blank" rel="noopener">
+                <!-- Facebook ikona -->
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Facebook
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram divadla Vitus">
+                <!-- Instagram ikona -->
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <!-- DOPLNIT: Fakturační údaje (pokud soubor funguje pod IČO/spolkem) -->
+          <!-- Pokud nemáte IČO, celý tento blok smažte -->
+          <div class="contact-block">
+            <h3>Fakturační údaje</h3>
+            <address>
+              <p><!-- DOPLNIT: Název spolku / občanského sdružení --></p>
+              <p>IČO:&nbsp;<!-- DOPLNIT --></p>
+              <p><!-- DOPLNIT: Adresa sídla --></p>
+            </address>
+          </div>
+
+        </div><!-- /.contact-grid -->
+
+        <!-- Nábor -->
+        <div class="contact-recruitment">
+          <h3>Chceš hrát nebo pomáhat v&nbsp;zákulisí?</h3>
+          <p>Vždy hledáme nové tváře i&nbsp;šikovné ruce. Jestli tě lákají prkna, která znamenají svět, nebo chceš pomáhat s&nbsp;kostýmy, světly či produkcí — ozvi se nám!</p>
+          <a href="mailto:divadlovitus@seznam.cz" class="btn-primary">Napiš nám</a>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+  </main>
+
+  <!-- ===================== PATIČKA ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-logo">Vitus</p>
+      <p class="footer-copy">&copy; <span id="footer-year"></span> Divadlo Vitus. Vyrobeno s&nbsp;láskou.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Zobrazení fotografie" hidden>
+    <button class="lightbox-close" aria-label="Zavřít">&times;</button>
+    <button class="lightbox-prev" aria-label="Předchozí fotografie">&#8249;</button>
+    <button class="lightbox-next" aria-label="Další fotografie">&#8250;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
